@@ -3,66 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keybr Clone</title>
+    <title>Custom Keyboard Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Keybr Clone</h1>
-    </header>
+    <div class="kbd">
+        <!-- Top Row -->
+        <div class="key green" style="grid-column: span 1;">~</div>
+        <div class="key green" style="grid-column: span 1;">1</div>
+        <div class="key yellow" style="grid-column: span 1;">2</div>
+        <div class="key yellow" style="grid-column: span 1;">3</div>
+        <div class="key yellow" style="grid-column: span 1;">4</div>
+        <div class="key yellow" style="grid-column: span 1;">5</div>
+        <div class="key yellow" style="grid-column: span 1;">6</div>
+        <div class="key red" style="grid-column: span 1;">7</div>
+        <div class="key red" style="grid-column: span 1;">8</div>
+        <div class="key red" style="grid-column: span 1;">9</div>
+        <div class="key red" style="grid-column: span 1;">0</div>
+        <div class="key orange" style="grid-column: span 1;">-</div>
+        <div class="key orange" style="grid-column: span 1;">=</div>
+        <div class="key blue" style="grid-column: span 1;">New</div> 
+        <div class="key orange bksp" style="grid-column: span 2;">Backspace</div>
 
-    <main>
-        <section class="typing-container">
-            <div class="text-display">
-                <p id="text-to-type">Type this text as fast as you can.</p>
-            </div>
-            <textarea id="typing-area" placeholder="Start typing above text..."></textarea>
-            <div class="stats">
-                <p><strong>Words per Minute:</strong> <span id="wpm">0</span></p>
-                <p><strong>Accuracy:</strong> <span id="accuracy">0%</span></p>
-            </div>
-        </section>
+        <div class="key green tab" style="grid-column: span 1.5;">Tab</div>
+        <div class="key green" style="grid-column: span 1;">Q</div>
+        <div class="key green" style="grid-column: span 1;">W</div>
+        <div class="key blue" style="grid-column: span 1;">E</div>
+        <div class="key blue" style="grid-column: span 1;">R</div>
+        <div class="key red" style="grid-column: span 1;">T</div>
+        <div class="key red" style="grid-column: span 1;">Y</div>
+        <div class="key red" style="grid-column: span 1;">U</div>
+        <div class="key orange" style="grid-column: span 1;">I</div>
+        <div class="key orange" style="grid-column: span 1;">O</div>
+        <div class="key orange" style="grid-column: span 1;">P</div>
+        <div class="key orange" style="grid-column: span 1;">[</div>
+        <div class="key orange" style="grid-column: span 1;">]</div>
+        <div class="key orange" style="grid-column: span 1;">\</div>
 
-        <section class="keyboard-container">
-            <div class="keyboard-row">
-                <button class="key" data-key="Q">Q</button>
-                <button class="key" data-key="W">W</button>
-                <button class="key" data-key="E">E</button>
-                <button class="key" data-key="R">R</button>
-                <button class="key" data-key="T">T</button>
-                <button class="key" data-key="Y">Y</button>
-                <button class="key" data-key="U">U</button>
-                <button class="key" data-key="I">I</button>
-                <button class="key" data-key="O">O</button>
-                <button class="key" data-key="P">P</button>
-            </div>
-            <div class="keyboard-row">
-                <button class="key" data-key="A">A</button>
-                <button class="key" data-key="S">S</button>
-                <button class="key" data-key="D">D</button>
-                <button class="key" data-key="F">F</button>
-                <button class="key" data-key="G">G</button>
-                <button class="key" data-key="H">H</button>
-                <button class="key" data-key="J">J</button>
-                <button class="key" data-key="K">K</button>
-                <button class="key" data-key="L">L</button>
-            </div>
-            <div class="keyboard-row">
-                <button class="key" data-key="Z">Z</button>
-                <button class="key" data-key="X">X</button>
-                <button class="key" data-key="C">C</button>
-                <button class="key" data-key="V">V</button>
-                <button class="key" data-key="B">B</button>
-                <button class="key" data-key="N">N</button>
-                <button class="key" data-key="M">M</button>
-            </div>
-        </section>
-    </main>
+        <div class="key green caps" style="grid-column: span 2;">Caps Lock</div>
+        <div class="key green" style="grid-column: span 1;">A</div>
+        <div class="key blue" style="grid-column: span 1;">S</div>
+        <div class="key blue" style="grid-column: span 1;">D</div>
+        <div class="key blue" style="grid-column: span 1;">F</div>
+        <div class="key blue" style="grid-column: span 1;">G</div>
+        <div class="key red" style="grid-column: span 1;">H</div>
+        <div class="key red" style="grid-column: span 1;">J</div>
+        <div class="key red" style="grid-column: span 1;">K</div>
+        <div class="key red" style="grid-column: span 1;">L</div>
+        <div class="key orange" style="grid-column: span 1;">;</div>
+        <div class="key orange" style="grid-column: span 1;">'</div>
+        <div class="key orange enter" style="grid-column: span 2;">Enter</div>
 
-    <footer>
-        <p>&copy; 2024 Keybr Clone</p>
-    </footer>
+        <div class="key green shift" style="grid-column: span 2.5;">Shift</div>
+        <div class="key green" style="grid-column: span 1;">Z</div>
+        <div class="key blue" style="grid-column: span 1;">X</div>
+        <div class="key blue" style="grid-column: span 1;">C</div>
+        <div class="key blue" style="grid-column: span 1;">V</div>
+        <div class="key yellow" style="grid-column: span 1;">B</div>
+        <div class="key yellow" style="grid-column: span 1;">N</div>
+        <div class="key yellow" style="grid-column: span 1;">M</div>
+        <div class="key yellow" style="grid-column: span 1;">,</div>
+        <div class="key yellow" style="grid-column: span 1;">.</div>
+        <div class="key yellow" style="grid-column: span 1;">/</div>
+        <div class="key green shift" style="grid-column: span 2.5;">Shift</div>
 
-    <script src="scripts.js"></script>
+        <div class="key green ctrl" style="grid-column: span 1;">Ctrl</div>
+        <div class="key green" style="grid-column: span 1;">Alt</div>
+        <div class="key red space" style="grid-column: span 9;">Space</div>
+        <div class="key green" style="grid-column: span 1;">Alt</div>
+        <div class="key green ctrl" style="grid-column: span 1;">Ctrl</div>
+    </div>
 </body>
 </html>
